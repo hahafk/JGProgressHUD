@@ -24,6 +24,10 @@
 		6BC018D8197BF28100DA4C49 /* JGAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BC018D7197BF28100DA4C49 /* JGAppDelegate.m */; };
 		6BC018E1197BF28100DA4C49 /* JGViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BC018E0197BF28100DA4C49 /* JGViewController.m */; };
 		6BC018E3197BF28100DA4C49 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6BC018E2197BF28100DA4C49 /* Images.xcassets */; };
+		97DA4F0C1B5659DE0000B58E /* loading1.png in Resources */ = {isa = PBXBuildFile; fileRef = 97DA4F091B5659DE0000B58E /* loading1.png */; };
+		97DA4F0D1B5659DE0000B58E /* loading2.png in Resources */ = {isa = PBXBuildFile; fileRef = 97DA4F0A1B5659DE0000B58E /* loading2.png */; };
+		97DA4F0E1B5659DE0000B58E /* loading3.png in Resources */ = {isa = PBXBuildFile; fileRef = 97DA4F0B1B5659DE0000B58E /* loading3.png */; };
+		97DA4F161B5662040000B58E /* JGProgressHUDImageAnimationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 97DA4F151B5662040000B58E /* JGProgressHUDImageAnimationView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -102,6 +106,11 @@
 		6BC018E2197BF28100DA4C49 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		6BC018E9197BF28100DA4C49 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		6BC01909197C1D0F00DA4C49 /* JGProgressHUD Tests-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "JGProgressHUD Tests-Info.plist"; sourceTree = "<group>"; };
+		97DA4F091B5659DE0000B58E /* loading1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = loading1.png; sourceTree = "<group>"; };
+		97DA4F0A1B5659DE0000B58E /* loading2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = loading2.png; sourceTree = "<group>"; };
+		97DA4F0B1B5659DE0000B58E /* loading3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = loading3.png; sourceTree = "<group>"; };
+		97DA4F141B5662040000B58E /* JGProgressHUDImageAnimationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JGProgressHUDImageAnimationView.h; sourceTree = "<group>"; };
+		97DA4F151B5662040000B58E /* JGProgressHUDImageAnimationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JGProgressHUDImageAnimationView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -174,7 +183,10 @@
 				6BC018D7197BF28100DA4C49 /* JGAppDelegate.m */,
 				6BC018DF197BF28100DA4C49 /* JGViewController.h */,
 				6BC018E0197BF28100DA4C49 /* JGViewController.m */,
+				97DA4F141B5662040000B58E /* JGProgressHUDImageAnimationView.h */,
+				97DA4F151B5662040000B58E /* JGProgressHUDImageAnimationView.m */,
 				6BC018E2197BF28100DA4C49 /* Images.xcassets */,
+				97DA4F081B5659DE0000B58E /* res */,
 				6BC018CE197BF28100DA4C49 /* Supporting Files */,
 			);
 			path = "JGProgressHUD Tests";
@@ -189,6 +201,16 @@
 				6BC018D5197BF28100DA4C49 /* JGProgressHUD Tests-Prefix.pch */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		97DA4F081B5659DE0000B58E /* res */ = {
+			isa = PBXGroup;
+			children = (
+				97DA4F091B5659DE0000B58E /* loading1.png */,
+				97DA4F0A1B5659DE0000B58E /* loading2.png */,
+				97DA4F0B1B5659DE0000B58E /* loading3.png */,
+			);
+			path = res;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -312,6 +334,9 @@
 			files = (
 				6BC018E3197BF28100DA4C49 /* Images.xcassets in Resources */,
 				6BC018D2197BF28100DA4C49 /* InfoPlist.strings in Resources */,
+				97DA4F0E1B5659DE0000B58E /* loading3.png in Resources */,
+				97DA4F0D1B5659DE0000B58E /* loading2.png in Resources */,
+				97DA4F0C1B5659DE0000B58E /* loading1.png in Resources */,
 				6B60B26719A3C09900ED1A4E /* JGProgressHUD Resources.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -336,6 +361,7 @@
 				6BC018D4197BF28100DA4C49 /* main.m in Sources */,
 				6BC018E1197BF28100DA4C49 /* JGViewController.m in Sources */,
 				6BC018D8197BF28100DA4C49 /* JGAppDelegate.m in Sources */,
+				97DA4F161B5662040000B58E /* JGProgressHUDImageAnimationView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

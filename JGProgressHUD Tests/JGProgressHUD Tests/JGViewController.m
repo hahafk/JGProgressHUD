@@ -12,6 +12,7 @@
 #import <JGProgressHUD/JGProgressHUD.h>
 #else
 #import "JGProgressHUD.h"
+#import "JGProgressHUDImageAnimationView.h"
 #endif
 
 #ifndef kCFCoreFoundationVersionNumber_iOS_7_0
@@ -76,6 +77,25 @@
     HUD.delegate = self;
     
     return HUD;
+}
+
+
+- (void)showCustomerAnimationView{
+    JGProgressHUD *HUD = self.prototypeHUD;
+    
+    NSArray *images = [NSArray arrayWithObjects: [UIImage imageNamed:@"loading1.png"],
+     [UIImage imageNamed:@"loading2.png"],
+     [UIImage imageNamed:@"loading3.png"],
+     nil ];
+    
+    JGProgressHUDImageAnimationView *indicatorView = [[JGProgressHUDImageAnimationView alloc] initWithImages:images];
+    
+    HUD.indicatorView = indicatorView;
+    
+    [HUD showInView:self.navigationController.view];
+    [indicatorView.imageView startAnimating];
+    
+    [HUD dismissAfterDelay:3.0];
 }
 
 - (void)showSuccessHUD {
@@ -312,7 +332,7 @@
         return 6;
     }
     else {
-        return 8;
+        return 9;
     }
 }
 
@@ -429,6 +449,9 @@
             case 7:
                 cell.textLabel.text = @"Tap To Cancel";
                 break;
+            case 8:
+                cell.textLabel.text = @"Customer Animation View";
+                break;
         }
     }
     
@@ -467,6 +490,9 @@
             break;
         case 7:
             [self showCancellableHUD];
+            break;
+        case 8:
+            [self showCustomerAnimationView];
             break;
     }
 }
