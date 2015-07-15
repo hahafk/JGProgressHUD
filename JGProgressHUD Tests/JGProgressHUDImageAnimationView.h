@@ -14,4 +14,6 @@
 
 @property (nonatomic, strong) UIImageView *imageView;
 
+- (instancetype)initWithImages:(NSArray *)images;
+
 @end
