@@ -15,7 +15,7 @@
     _imageView = [UIImageView new];
     _imageView.animationImages = _images;
     _imageView.animationDuration = 1.0;
-    _imageView.animationRepeatCount = 0;
+    _imageView.frame = CGRectMake(0, 0, 64, 64);
     self = [super initWithContentView:_imageView];
     return self;
 }
